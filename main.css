@@ -23,7 +23,7 @@ body {
 h2 {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #000;
   border-radius: 15px;
 }
 
@@ -32,7 +32,36 @@ h2 {
   font-size: 1.5rem;
   background-color: #000;
   color: #ffff00;
-  border: 3px solid #483d8b;
+  border: none;
   border-radius: 15px;
   cursor: pointer;
+  box-shadow: 0 2px 20px #483d8b;
+  transition: transform 0.5s ease-out;
+}
+
+.code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clipboard {
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+}
+
+#clipboard:hover,
+#clipboared:active,
+#clipboard:focus {
+  transform: scale(1.2, 1.2);
+  outline: none;
+}
+
+.colorBtn:hover,
+.colorBtn:active,
+.colorBtn:focus {
+  outline: none;
+  transform: scale(1.1, 1.1);
 }
